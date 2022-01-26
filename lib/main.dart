@@ -14,14 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Amazon App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage2(),
+      home:  HomePage2(),
       routes: {
         HomePage.id: (context) => HomePage(),
-        HomePage2.id: (context) => HomePage2()
+        HomePage2.id: (context) => HomePage2(),
       },
     );
   }

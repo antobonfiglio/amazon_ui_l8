@@ -1,12 +1,11 @@
 # amazon_ui
 
-A new Flutter project.
+Amazon shop appning eski versiyasi kloni
+![img.png](img.png)`
 
-## Getting Started
+Darsda berilgan shartga ko'ra shakllantrilidi
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+home: HomePage2 ga ulangan. unda yangi uy vazifasi qilingan. Darsdagi holati esa HomePage1 da.
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)

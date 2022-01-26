@@ -17,10 +17,6 @@ class _HomePage2State extends State<HomePage2> {
       appBar: AppBar(
           elevation: 0,
           backgroundColor: const Color.fromRGBO(12, 129, 151, 1),
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.menu),
-          ),
           actions: [
             IconButton(onPressed: () {}, icon: const Icon(Icons.mic)),
             IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart)),
@@ -48,11 +44,11 @@ class _HomePage2State extends State<HomePage2> {
                     hintText: "What are you looking for?",
                     prefixIcon: Icon(
                       Icons.search,
-                      color: Color.fromRGBO(12, 129, 151, 1),
+                      color: Colors.cyan
                     ),
                     suffixIcon: Icon(
                       Icons.camera_alt,
-                      color: Color.fromRGBO(12, 129, 151, 1),
+                      color: Colors.cyan,
                     )),
               ),
             ),
@@ -76,7 +72,7 @@ class _HomePage2State extends State<HomePage2> {
                   ),
                   Expanded(
                     child: Text(
-                      "Deliver to Korea, Republic of",
+                      "Deliver to Uzbekistan",
                       style: TextStyle(color: Colors.white, fontSize: 15),
                     ),
                     flex: 8,
@@ -109,13 +105,15 @@ class _HomePage2State extends State<HomePage2> {
                         alignment: Alignment.center,
                         child: const Text(
                           "We ship 45 million products",
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(fontSize: 22, fontFamily: "Amazon"),
                         )),
                     flex: 3,
                   ),
                 ],
               ),
             ),
+
+            // bu oraliqdagi seriy chziiq
             const Divider(thickness: 8,),
             // #sign_in_button
             Container(
@@ -135,6 +133,7 @@ class _HomePage2State extends State<HomePage2> {
                   MaterialButton(
                     elevation: 0,
                     height: MediaQuery.of(context).size.height * 0.058,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                     onPressed: () {},
                     color: const Color.fromRGBO(255, 152, 15, 1),
                     child: const Text(
@@ -143,6 +142,7 @@ class _HomePage2State extends State<HomePage2> {
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                   ),
+              // TextButton(onPressed: (){}, child: Text("Create an account",)),
                   const Text(
                     "Create an account",
                     style:
@@ -168,12 +168,12 @@ class _HomePage2State extends State<HomePage2> {
                       style: TextStyle(fontSize: 23),
                     ),
                     Image.asset(
-                      "assets/images/item_7.jpeg",
-                      height: MediaQuery.of(context).size.width * 0.55,
+                      "assets/images/injiq/curved2.jpg",
+                      height: MediaQuery.of(context).size.width * 0.4,
                       fit: BoxFit.cover,
                     ),
                     Text(
-                      "Up to 31% off APC UPS Battery Back\n\$10.99 - \$79.9",
+                      "Curved display monoblock\n\$399.9 - \$999",
                       style: TextStyle(
                           fontSize: 16,
                           height: 1.5,
@@ -189,7 +189,7 @@ class _HomePage2State extends State<HomePage2> {
                 vertical: MediaQuery.of(context).size.height * 0.02,
               ),
               child: const Text(
-                "Best sellers in Electronics",
+                "Best sellers in Tablets",
                 style: TextStyle(fontSize: 23),
               ),
             ),
@@ -234,7 +234,7 @@ class _HomePage2State extends State<HomePage2> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Image.asset("assets/images/item_7.jpeg", height: MediaQuery.of(context).size.width*0.5, fit: BoxFit.cover,),
+                  Image.asset("assets/images/injiq/lens3.jpg", height: MediaQuery.of(context).size.width*0.5, fit: BoxFit.cover,),
                   SizedBox(height: 8,),
                   GridView.builder(
                       shrinkWrap: true,
@@ -256,6 +256,9 @@ class _HomePage2State extends State<HomePage2> {
             ),
           ],
         ),
+      ),
+      drawer: Drawer(
+
       ),
     );
   }
